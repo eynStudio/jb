@@ -1,7 +1,5 @@
-
-
 //Grid
-$grid-cols:24;
+$grid-cols: 24;
 $grid-breakpoints: (
         xs: 0,
         sm: 576px,
@@ -9,3 +7,18 @@ $grid-breakpoints: (
         lg: 992px,
         xl: 1200px
 ) !default;
+
+//Colors
+$primary: #3c8dbc;
+$info: #00c0ef;
+$success: #00a65a;
+$warning: #f39c12;
+$danger: #dd4b39;
+
+$colors: (
+        primary: $primary,
+        info: $info,
+        success: $success,
+        warning: $warning,
+        danger: $danger,
+)
