@@ -1,7 +1,6 @@
 {
-  "name": "jb",
-  "version": "0.0.1",
-  "private": true,
+  "name": "jbreak",
+  "version": "0.0.2",
   "entry": {
     "index": "./src/index.tsx"
   },
@@ -31,5 +30,6 @@
     "node-sass": "^4.0.0",
     "webpack": "^2.3.2",
     "webpack-dev-server": "^2.4.2"
-  }
+  },
+  "npmName": "jbreak"
 }
