@@ -4,15 +4,19 @@ var path = require('path');
 module.exports = {
     entry: {
         index: './src/index.ts',
+        store: './src/store/localStore.ts',
     },
     output: {
         path: path.resolve('dist'),
-        filename: '[name].js'
+        filename: '[name].js',
+        sourceMapFilename: '[name].map',
+        library: 'jbreek',
+        libraryTarget: 'umd'
     },
+    devtool: 'source-map',
     resolve: {
         extensions: ['.ts', '.js', '.htm'],
-        alias: {
-        }
+        alias: {}
     },
     module: {
         loaders: [
