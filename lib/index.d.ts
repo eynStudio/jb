@@ -4,3 +4,5 @@ export declare const store: {
         getObj: (key: string) => any;
     };
 };
+import './wx';
+import './utils';
