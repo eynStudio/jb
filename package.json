@@ -1,0 +1,36 @@
+{
+  "name": "jb",
+  "version": "0.1.0",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "^1.13.7",
+    "tslint": "^5.10.0",
+    "tslint-config-prettier": "^1.13.0",
+    "typescript": "^2.9.2"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eynStudio/jb.git"
+  },
+  "keywords": [],
+  "author": "pengshengwang@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eynStudio/jb/issues"
+  },
+  "homepage": "https://github.com/eynStudio/jb#readme"
+}
